@@ -1,14 +1,8 @@
 <?php
 
-$zakka = $_GET['zakka'];
-
-$seisen = $_GET['seisen'];
-
-$sonota = $_GET['sonota'];
-
 //‡@
 
-$param = 1;
+$param = $_GET['param'];
 
 if ($param == 1) {echo 'G‰İ';
 
@@ -16,30 +10,36 @@ if ($param == 1) {echo 'G‰İ';
 
 } elseif ($param == 3) {echo '‚»‚Ì‘¼';
 
-} else {echo '';
-
 };
 
 echo "<br>";
 
 //‡A
 
-//’l’i‚Ì•Ï”
+$sougaku = 'x';
 
-$_zakka = 'a';
+//ŒÂ”
 
-$_seisen = 'b';
+$zakka = 'a';
 
-$_sonota = 'c';
+$seisen = 'b';
+
+$sonota = 'c';
 
 //‘Šz
 
-echo "$zakka * $_zakka + $seisen * $_seisen + $sonota * $_sonota"."<br>";
+echo $sougaku ."<br>";
 
 //1ŒÂ“–‚½‚è‚Ì’l’i
 
-echo "$_zakka / $zakka"."<br>";
+echo "$sougaku / ($zakka + $seisen + $sonota)" ."<br>";
 
-echo "$_seisen / $seisen"."<br>";
+//‡B
 
-echo "$_sonota / $sonota";
+//3000‰~ˆÈã
+
+echo "$sougaku * 0.04" ."<br>";
+
+//5000‰~ˆÈã
+
+echo "$sougaku * 0.05";
